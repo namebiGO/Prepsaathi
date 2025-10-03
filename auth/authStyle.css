@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  
+  margin: 50px auto;
+  background: #fff;
+  width: 420px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+
+}
+
+.form-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #222;
+}
+
+.input-group {
+  margin: 1.2rem 0;
+  position: relative;
+}
+
+.input-group i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+  font-size: 1rem;
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1.5px solid #aaa;
+  padding: 12px 12px 12px 2.5rem;
+  font-size: 15px;
+  background: transparent;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(125, 125, 235);
+}
+
+input::placeholder {
+  color: transparent;
+}
+
+label {
+  left: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #777;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  top: -8px;
+  font-size: 12px;
+  color: rgb(125, 125, 235);
+}
+
+.recover {
+  text-align: right;
+  font-size: 0.9rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.recover a {
+  text-decoration: none;
+  color: rgb(125, 125, 235);
+}
+
+.recover a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  background: rgb(125, 125, 235);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #07001f;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 0.95rem;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+.or::before,
+.or::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+  margin: 0 10px;
+}
+
+.icons {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.icons i {
+  color: rgb(125, 125, 235);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  border: 1.5px solid #ddd;
+  margin: 0 10px;
+  transition: all 0.3s;
+}
+
+.icons i:hover {
+  background: rgb(125, 125, 235);
+  color: white;
+  transform: scale(1.1);
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+ align-items: center;
+
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.links button {
+  color: rgb(125, 125, 235);
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.links button:hover {
+  text-decoration: underline;
+  color: blue;
+}
