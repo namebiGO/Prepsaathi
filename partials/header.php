@@ -31,7 +31,7 @@ $baseUrl = (isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] === 'localhost
 
         <nav class="nav-menu">
             <a href="/" class="active">Home</a>
-            <a href="prepsaathi/about.php">About</a>
+            <a href="/about.php">About</a>
             <a href="/contact.php">Contact Us</a>
             <?php if (isset($_SESSION['email'])): ?>
 
